@@ -486,7 +486,7 @@ def interactive_menu():
         print('[4] | Ver y cerrar la caja diaria')
         print('[5] | Salir del sistema')
 
-        option = validate_option('📋 Ingrese una opción del menú (1-5): ', min_val=1, max_val=4)
+        option = validate_option('📋 Ingrese una opción del menú (1-5): ', min_val=1, max_val=5)
 
         if option == 1:
             register_sale(system_data)
