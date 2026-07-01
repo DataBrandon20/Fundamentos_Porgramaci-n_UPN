@@ -275,7 +275,7 @@ def register_sale(inventory):
     print(' '*22, '🛒 REGISTRAR VENTAS 🛒')
     print('='*70)
 
-    portion_rules = {
+    potion_rules = {
         "Aloe": 3,
         "Batido F1": 2, "Té": 2, "NRG": 2,
         "Beta Heart": 1, "Bebida de colágeno": 1, "Beverage Mix": 1, "PDM": 1, "Fibra": 1, "Drive": 1, "Golden Beverage": 1, "Liftoff": 1, "Omega": 1, "Multivitamínico": 1, "Calcio": 1,
@@ -312,7 +312,7 @@ def register_sale(inventory):
                     final_order.append({'name': "Batido F1 Cookies", 'qty': 1})
                     final_order.append({'name': main_product.name_product, 'qty': 1})
             else:
-                qty_needed = next((v for k, v in portion_rules.items() if k in main_product.name_product), 1)
+                qty_needed = next((v for k, v in potion_rules.items() if k in main_product.name_product), 1)
                 final_order.append({'name': main_product.name_product, 'qty': qty_needed})
         
             if not isinstance(main_product, Tablet_Product):
@@ -486,7 +486,7 @@ def interactive_menu():
         print('[4] | Ver y cerrar la caja diaria')
         print('[5] | Salir del sistema')
 
-        option = validate_option('📋 Ingrese una opción del menú (1-4): ', min_val=1, max_val=4)
+        option = validate_option('📋 Ingrese una opción del menú (1-5): ', min_val=1, max_val=4)
 
         if option == 1:
             register_sale(system_data)
