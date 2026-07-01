@@ -76,7 +76,7 @@ def initial_database():
             "powdered_product": {
 
                 #[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-                # = = = = = = = = = =  LINEA DE PRODUCTOS (BATIDOS - 12 SABORES DIFERENTES)  = = = = = = = = = = =
+                # = = = = = = = = = =  LINEA DE PRODUCTOS (BATIDOS - 26 SABORES DIFERENTES)  = = = = = = = = = = =
                 #[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
                 "Batido F1 Cookies": Powdered_Product("Batido F1 Cookies", 187.00, 12, 10.0, 42, 42),
                 "Batido F1 Fresa": Powdered_Product("Batido F1 Fresa", 187.00, 4, 10.0, 42, 42),
@@ -90,7 +90,21 @@ def initial_database():
                 "Batido F1 Piña Colada": Powdered_Product("Batido F1 Piña Colada", 187.00, 10, 10.0, 42, 42),
                 "Batido F1 Café Latte": Powdered_Product("Batido F1 CAfé Latte", 187.00, 10, 10.0, 42, 42),
                 "Batido F1 Frutos rojos": Powdered_Product("Batido F1 Frutos rojos", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Coco": Powdered_Product("Batido F1 Coco", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Limón Cheesecake": Powdered_Product("Batido F1 Limón Cheesecake", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Manzana Canela": Powdered_Product("Batido F1 Manzana Canela", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Chocolate Blanco": Powdered_Product("Batido F1 Chocolate Blanco", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Moca": Powdered_Product("Batido F1 Moca", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Capuchino": Powdered_Product("Batido F1 Capuchino", 187.00, 10, 10.0, 42, 42),
                 "Batido F1 Maracuyá": Powdered_Product("Batido F1 Maracuyá", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Mango": Powdered_Product("Batido F1 Mango", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Praliné con Crema": Powdered_Product("Batido F1 Praliné con Crema", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Chocolate con Menta": Powdered_Product("Batido F1 Chocolate con Menta", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Chocolate Holandés": Powdered_Product("Batido F1 Chocolate Holandés", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Fresa Plátano": Powdered_Product("Batido F1 Fresa Plátano", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Caramelo Salado": Powdered_Product("Batido F1 Caramelo Salado", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Tiramisú": Powdered_Product("Batido F1 Tiramisú", 187.00, 10, 10.0, 42, 42),
+                "Batido F1 Pera": Powdered_Product("Batido F1 Pera", 187.00, 10, 10.0, 42, 42),
 
 
                 #[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -486,7 +500,7 @@ def interactive_menu():
         print('[4] | Ver y cerrar la caja diaria')
         print('[5] | Salir del sistema')
 
-        option = validate_option('📋 Ingrese una opción del menú (1-5): ', min_val=1, max_val=4)
+        option = validate_option('📋 Ingrese una opción del menú (1-5): ', min_val=1, max_val=5)
 
         if option == 1:
             register_sale(system_data)
